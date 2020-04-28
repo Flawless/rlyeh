@@ -19,13 +19,14 @@ DEPEND=">=virtual/jdk-1.6"
 S=${WORKDIR}/clojure-tools/
 
 src_install() {
+    sed -i -e 's@PREFIX@'"/usr/lib/clojure"'@g' clojure
     dobin clojure clj
 
     doman clojure.1 clj.1
 
-    into /usr/lib/
-    dolib.a deps.edn example-deps.edn
+    insinto /usr/lib/clojure
+    doins deps.edn example-deps.edn
 
-    into /usr/lib/libexec
-    dolib.a clojure-tools-${PV}.jar clojure-tools-${PV}.jar
+    insinto /usr/lib/clojure/libexec
+    doins clojure-tools-${PV}.jar
 }
