@@ -19,10 +19,13 @@ DEPEND=">=virtual/jdk-1.6"
 S=${WORKDIR}/clojure-tools/
 
 src_install() {
-	dobin clojure clj
+    dobin clojure clj
 
-	doman clojure.1 clj.1
-	dolib.a deps.edn example-deps.edn
-	into /usr/lib64/libexec
-	dolib.a clojure-tools-${PV}.jar clojure-tools-${PV}.jar
+    doman clojure.1 clj.1
+
+    into /usr/lib/
+    dolib.a deps.edn example-deps.edn
+
+    into /usr/lib/libexec
+    dolib.a clojure-tools-${PV}.jar clojure-tools-${PV}.jar
 }
