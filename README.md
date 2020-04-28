@@ -1,2 +1,2 @@
 # rlyeh
-rlyeh is gentoo overlay with 0 rare packages
+rlyeh is gentoo overlay with 1 rare package
