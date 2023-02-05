@@ -18,7 +18,8 @@ IUSE="-relative_url"
 RESTRICT="network-sandbox"
 BDEPEND="
 	${RUBY_DEPS}
-	>=dev-ruby/bundler-2:2"
+	>=dev-ruby/bundler-2:2
+	virtual/krb5"
 DEPEND="
 	acct-user/git[gitlab]
 	acct-group/git
