@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/nullobsi/clight-gui"
 SLOT="0"
 KEYWORDS="~amd64"
 
-BDEPEND="dev-utils/cmake"
+BDEPEND="dev-util/cmake"
 RDEPEND="dev-qt/qtcharts"
 DEPEND="${RDEPEND}"
 
