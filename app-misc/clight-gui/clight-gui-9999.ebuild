@@ -11,7 +11,8 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 BDEPEND="dev-util/cmake"
-RDEPEND="dev-qt/qtcharts"
+RDEPEND="dev-qt/qtcharts
+	app-misc/clight-gui"
 DEPEND="${RDEPEND}"
 
 LICENSE="GPL-3"
