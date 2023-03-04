@@ -11,7 +11,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 BDEPEND="dev-utils/cmake"
-RDEPEND="dev-qt/qtchart"
+RDEPEND="dev-qt/qtcharts"
 DEPEND="${RDEPEND}"
 
 LICENSE="GPL-3"
