@@ -30,8 +30,8 @@ src_install() {
 	doins deps.edn
 	doins tools.edn
 	doins example-deps.edn
-	doins exec.jar
 	insinto $CLOJURE_LIB_DIR/libexec
+	doins exec.jar
 	doins ${ACTUAL_PN}-tools-${PV}.jar
 
 	dobin clojure
