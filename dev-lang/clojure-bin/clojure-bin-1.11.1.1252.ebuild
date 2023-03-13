@@ -22,12 +22,15 @@ CLOJURE_LIB_DIR="/usr/share/${ACTUAL_PN}"
 src_prepare() {
 	default
 	sed -i -e "s|PREFIX|$CLOJURE_LIB_DIR|g" clojure || die
+	sed -i -e "s|BINDIR|$BIN_DIR|g" clj || die
 }
 
 src_install() {
 	insinto $CLOJURE_LIB_DIR
 	doins deps.edn
+	doins tools.edn
 	doins example-deps.edn
+	doins exec.jar
 	insinto $CLOJURE_LIB_DIR/libexec
 	doins ${ACTUAL_PN}-tools-${PV}.jar
 
